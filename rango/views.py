@@ -70,7 +70,7 @@ def category(request, category_name_url):
 def about(request):
     context = RequestContext(request)
     context_dict = {'aboutmessage': "This is the about page"}
-    return render_to_response('rango/about/about.html', context_dict, context)
+    return render_to_response('rango/about.html', context_dict, context)
 
 def encode_url(url):
     return url.replace('_', '')
